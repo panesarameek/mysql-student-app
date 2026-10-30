@@ -1,3 +1,4 @@
+import os
 import pandas as pd
 import re
 from tkinter import *
@@ -7,7 +8,7 @@ import mysql.connector
 DB_CONFIG = {
     "host": "localhost",
     "user": "root",
-    "password": "Ameek@2004",
+    "password": "os.environ.get("DB_PASSWORD", "")",
     "database": "Student"
 }
 
