@@ -12,6 +12,8 @@ DB_CONFIG = {
     "database": "Student"
 }
 
+print(len(DB_CONFIG["password"]))
+
 def get_connection():
     return mysql.connector.connect(**DB_CONFIG)
 
