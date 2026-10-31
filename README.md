@@ -45,7 +45,7 @@ After adding sample students through the form, I ran these queries in MySQL Work
 ```sql
 SELECT * FROM students;
 ```
-!(screenshots/query_all_students.png)
+![Q1](Screenshots/query_all_students.png)
 
 **2. Number of students in each course**
 ```sql
@@ -53,7 +53,7 @@ SELECT course, COUNT(*) AS students
 FROM students
 GROUP BY course;
 ```
-!(screenshots/query_by_course.png)
+![Q2](Screenshots/query_by_course.png)
 
 **3. Active vs inactive students**
 ```sql
@@ -61,7 +61,7 @@ SELECT status, COUNT(*) AS students
 FROM students
 GROUP BY status;
 ```
-!(screenshots/query_by_status.png)
+![Q3](Screenshots/query_by_status.png)
 
 **4. Students older than 20, oldest first**
 ```sql
@@ -70,7 +70,7 @@ FROM students
 WHERE age > 20
 ORDER BY age DESC;
 ```
-!(screenshots/query_age_filter.png)
+![Q4](Screenshots/query_age_filter.png)
 
 ## How to run it
 
